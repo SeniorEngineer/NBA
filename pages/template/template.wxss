@@ -1,0 +1,28 @@
+.list{
+  border-top:2rpx solid #dddddd;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  border-bottom:2rpx solid #dddddd;
+}
+.list view image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 10rpx;
+}
+.list view {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  /* 竖直方向居中对齐 */
+  align-items: center;
+}
+.list view text{
+  margin-left: 20rpx;
+}
+.list .title {
+  font-weight: bold;
+}
+.list .image{
+  width: 100%;
+  height: 400rpx;
+}

@@ -1,0 +1,21 @@
+<!-- 引入模版 --> 
+<import src="/pages/template/template.wxml" /> 
+<view> 
+ <swiper indicator-dots catchtap='toindex' class='swiper' indicator-color='white' indicator-active-color='#379be9' autoplay> 
+ <block wx:for='{{images}}' wx:key='{{item.index}}'> 
+  <swiper-item>  
+    <image src='{{item.url}}' data-index='{{item.index}}'></image> 
+  </swiper-item> 
+  </block> 
+ </swiper> 
+ <text class='time'>{{time}}</text> 
+ <view class='countDown'> 
+ 倒计时：<text style='color:red'>{{countNum}}</text>s 
+ </view> 
+  <!-- 使用模版 --> 
+  <block wx:for="{{listData}}" wx:key="index" > 
+  <view catchtap='todetail' data-index='{{index}}'> 
+      <template is="listItem" data="{{...item}}" /> 
+  </view> 
+  </block> 
+</view> 
